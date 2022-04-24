@@ -1,0 +1,110 @@
+@import 'variables';
+
+@mixin green-btn {
+    background-image: $bg-green;
+    color: white;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    #container{
+        width: 43.75rem;
+        height: 28rem;
+        margin: 4rem auto;
+        border: 2px solid rgb(47, 82, 139);
+        background-image:$bg-blue-alpha;
+
+        
+        h2{
+            color: white;
+            font-size: 1.7rem;
+            text-align: center;
+            text-shadow: 1px 2px 3px black;
+        }
+
+        #projects{
+            width: 40rem;
+            height: 15rem;
+            margin: 0px auto;
+        
+            #main{
+                background-image: $bg-blue;
+        
+                li{
+                background-image: $bg-green;
+
+                    &:hover{
+                        background-image: none;
+                        background: white;
+                    }
+            
+                    a{
+                    font-weight: bold;
+                    color: white;
+
+                        &:hover{
+                            color: rgb(34, 149, 132);
+                        }
+                    }
+                }    
+            }
+
+            ol li{
+                border: 1px dotted black;
+                cursor: pointer;
+                padding: 5px;
+                margin-bottom: 5px;
+
+                &:hover{
+                    text-shadow: 1px 2px 3px black;
+                    background-image: $bg-blue;
+                    color: white;
+                }            
+            }
+        }
+
+        #btn-ap{
+            @include green-btn;
+            margin-left: 34rem;
+        }
+    }
+}
+
+@media(max-width:700px){
+    body{
+        #container{
+            width:22rem;
+            height: 50rem;
+            color: orange;
+    
+            h2{
+                font-size: 1.6rem;
+            }
+    
+            #projects{
+                width: 19rem;
+                height:23rem;
+
+                #main{
+                    li{
+                        a{
+                            font-size: .7rem;
+                            font-weight: 300;
+                        }
+                    }
+                }
+                ol {
+                    li{
+                        font-size: .8rem;
+                    }
+                }
+            }
+    
+            #btn-ap{
+                font-size: .7rem;
+                margin-left:14rem;
+            }
+        }
+    }
+}
+
+

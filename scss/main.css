@@ -1,0 +1,97 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body #container {
+  width: 43.75rem;
+  height: 28rem;
+  margin: 4rem auto;
+  border: 2px solid #2f528b;
+  background-image: -webkit-gradient(linear, right top, left top, from(rgba(121, 209, 239, 0.5)), to(rgba(47, 82, 139, 0.5)));
+  background-image: linear-gradient(to left, rgba(121, 209, 239, 0.5), rgba(47, 82, 139, 0.5));
+}
+
+body #container h2 {
+  color: white;
+  font-size: 1.7rem;
+  text-align: center;
+  text-shadow: 1px 2px 3px black;
+}
+
+body #container #projects {
+  width: 40rem;
+  height: 15rem;
+  margin: 0px auto;
+}
+
+body #container #projects #main {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#79d1ef), to(#2f528b));
+  background-image: linear-gradient(to bottom, #79d1ef, #2f528b);
+}
+
+body #container #projects #main li {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#afdd6f), to(#196552));
+  background-image: linear-gradient(to bottom, #afdd6f, #196552);
+}
+
+body #container #projects #main li:hover {
+  background-image: none;
+  background: white;
+}
+
+body #container #projects #main li a {
+  font-weight: bold;
+  color: white;
+}
+
+body #container #projects #main li a:hover {
+  color: #229584;
+}
+
+body #container #projects ol li {
+  border: 1px dotted black;
+  cursor: pointer;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+body #container #projects ol li:hover {
+  text-shadow: 1px 2px 3px black;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#79d1ef), to(#2f528b));
+  background-image: linear-gradient(to bottom, #79d1ef, #2f528b);
+  color: white;
+}
+
+body #container #btn-ap {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#afdd6f), to(#196552));
+  background-image: linear-gradient(to bottom, #afdd6f, #196552);
+  color: white;
+  margin-left: 34rem;
+}
+
+@media (max-width: 700px) {
+  body #container {
+    width: 22rem;
+    height: 50rem;
+    color: orange;
+  }
+  body #container h2 {
+    font-size: 1.6rem;
+  }
+  body #container #projects {
+    width: 19rem;
+    height: 23rem;
+  }
+  body #container #projects #main li a {
+    font-size: .7rem;
+    font-weight: 300;
+  }
+  body #container #projects ol li {
+    font-size: .8rem;
+  }
+  body #container #btn-ap {
+    font-size: .7rem;
+    margin-left: 14rem;
+  }
+}
+/*# sourceMappingURL=main.css.map */
